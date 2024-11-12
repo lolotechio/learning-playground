@@ -19,15 +19,15 @@ public class GoogleInterviewExercise {
         //printResult(findMatchingPairForSum2(new int[]{1, 2, 3, 9}, 8), 8);
         //printResult(findMatchingPairForSum2(new int[]{1, 2, 4, 5, 3}, 8), 8);
 
-        System.out.println(hasPairWithSum(new int[]{1, 2, 3, 9, 6}, 8));
-        System.out.println(hasPairWithSum(new int[]{1, 2, 4, 5, 2}, 8));
+        printResult(findMatchingPairForSum3(new int[]{1, 2, 3, 9, 8}, 8), 8);
+        printResult(findMatchingPairForSum3(new int[]{3, 1, 4, 5, 2}, 8), 8);
     }
 
     private static void printResult(int[] result, int sum) {
         if (result == null) {
             System.out.printf("No matching pair that equals %d%n", sum);
         } else {
-            System.out.printf("The matching pair that equals %d is [%d, %d]", sum, result[0], result[1]);
+            System.out.printf("The matching pair that equals %d is [%d, %d]%n", sum, result[0], result[1]);
         }
     }
 
@@ -67,15 +67,19 @@ public class GoogleInterviewExercise {
 
     //Google video version
     //Big O (Time complexity) - O(n)
-    private static boolean hasPairWithSum(int[] array, int sum) {
+    private static int[] findMatchingPairForSum3(int[] array, int sum) {
+        if (array == null) {
+            return null;
+        }
+
         Set<Integer> complements = new HashSet<>();
         for (int value : array) {
             if (complements.contains(value)) {
-                return true;
+                return new int[]{sum - value, value};
             }
             complements.add(sum - value);
         }
 
-        return false;
+        return null;
     }
 }
