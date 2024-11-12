@@ -41,6 +41,10 @@ public class ArraysCommonItems {
     //Big O (Time complexity) - O(a+b) - because we have two loops, but not nested
     //This method improves the complexity of the first solution in the method compareArrays
     private static boolean compareArrays2(char[] array1, char[] array2) {
+        if (array1 == null || array2 == null) {
+            return false;
+        }
+
         //loop through array1 and create a map where keys == items in the array1
         Map<Character, Boolean> mapWithArray1Values = new HashMap<>();
         for (char c : array1) {
