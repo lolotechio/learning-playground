@@ -43,6 +43,14 @@ public class Stack<E> {
         return holdingPointer.value;
     }
 
+    public boolean empty() {
+        return this.length == 0;
+    }
+
+    public int size() {
+        return this.length;
+    }
+
     @Override
     public String toString() {
         return "Stack{" +
