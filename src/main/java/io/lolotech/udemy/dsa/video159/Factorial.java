@@ -10,7 +10,7 @@ public class Factorial {
         System.out.println(findFactorialIterative(6));
     }
 
-
+    //Big O - O(n)
     private static int findFactorialRecursive(int number) {
         if (number == 1 || number == 2) {
             return number;
@@ -19,6 +19,7 @@ public class Factorial {
         return number * findFactorialRecursive(number - 1);
     }
 
+    //Big O - O(n)
     private static int findFactorialIterative(int number) {
         if (number == 1 || number == 2) {
             return number;
