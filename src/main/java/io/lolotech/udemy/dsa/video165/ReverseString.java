@@ -20,6 +20,6 @@ public class ReverseString {
             return s;
         }
 
-        return reverseStringRecursive2(s.substring(1)) + s.charAt(0) ;
+        return reverseStringRecursive2(s.substring(1)) + s.charAt(0);
     }
 }
