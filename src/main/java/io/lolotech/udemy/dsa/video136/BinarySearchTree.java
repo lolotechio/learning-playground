@@ -70,7 +70,3 @@ public class BinarySearchTree {
         return new ObjectMapper().writerWithDefaultPrettyPrinter().writeValueAsString(this);
     }
 }
-
-//     9
-//  4     20
-//1  6  15  170
