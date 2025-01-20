@@ -23,6 +23,7 @@ public class Fibonacci {
         return array[number];
     }
 
+    //O(2^n)
     private static int fibonacciRecursive(int number) {
         if (number < 2) {
             return number;
