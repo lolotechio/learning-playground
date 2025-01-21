@@ -33,8 +33,8 @@ public class FizzBuzz {
     //Time complexity O(n)
     private static String[] fizzBuzz(int n) {
         String[] result = new String[n];
-        for (int x = 1; x <= n; x++) {
-            result[x - 1] = calculateFizzBuzz(x);
+        for (int i = 1; i <= n; i++) {
+            result[i - 1] = calculateFizzBuzz(i);
         }
 
         return result;
