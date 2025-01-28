@@ -30,7 +30,7 @@ public class ExcelSheetColumnNumber {
     Output: 701
      */
 
-    private static Map<Character, Integer> alphabetMap = Map.ofEntries(
+    private static final Map<Character, Integer> alphabetMap = Map.ofEntries(
             Map.entry('A', 1),
             Map.entry('B', 2),
             Map.entry('C', 3),
