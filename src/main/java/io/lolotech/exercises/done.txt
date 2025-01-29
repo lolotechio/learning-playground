@@ -5,8 +5,8 @@
 [x] #283 Move Zeroes
 [] #371 Sum of Two Integers
 [x] #206 Reverse Linked List
-[] #171 Excel Sheet Column Number
-[] #169 Majority Element
+[x] #171 Excel Sheet Column Number
+[x] #169 Majority Element
 [] #13 Roman to Integer
 [] #237 Delete Node in a Linked List
 [] #122 Best Time to Buy and Sell Stock II
