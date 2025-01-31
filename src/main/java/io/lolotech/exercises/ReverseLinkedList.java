@@ -1,10 +1,6 @@
 package io.lolotech.exercises;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
-import lombok.SneakyThrows;
+import io.lolotech.exercises.util.LinkedList;
 
 public class ReverseLinkedList {
 
@@ -32,12 +28,12 @@ public class ReverseLinkedList {
             return new LinkedList();
         }
 
-        var linkedList = buildLinkedList(input);
+        var linkedList = LinkedList.fromArray(input);
 
         var currentNode = linkedList.getHead();
-        Node previousNode = null;
+        LinkedList.Node previousNode = null;
         while (currentNode != null) {
-            var nextNode = currentNode.next;
+            var nextNode = currentNode.getNext();
             currentNode.setNext(previousNode);
             previousNode = currentNode;
             currentNode = nextNode;
@@ -46,43 +42,5 @@ public class ReverseLinkedList {
         linkedList.setHead(previousNode);
 
         return linkedList;
-    }
-
-    private static LinkedList buildLinkedList(int[] array) {
-        var linkedList = new LinkedList(new Node(array[0]));
-
-        var currentNode = linkedList.getHead();
-        int i = 1;
-        while (i < array.length) {
-            var node = new Node(array[i]);
-            currentNode.next = node;
-            currentNode = node;
-            i++;
-        }
-
-        return linkedList;
-    }
-
-    @Data
-    @AllArgsConstructor
-    @NoArgsConstructor
-    static class LinkedList {
-        Node head;
-
-        @SneakyThrows
-        @Override
-        public String toString() {
-            return new ObjectMapper().writerWithDefaultPrettyPrinter().writeValueAsString(this);
-        }
-    }
-
-    @Data
-    static class Node {
-        int value;
-        Node next;
-
-        public Node(int value) {
-            this.value = value;
-        }
     }
 }

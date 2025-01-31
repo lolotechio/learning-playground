@@ -8,7 +8,7 @@
 [x] #171 Excel Sheet Column Number
 [x] #169 Majority Element
 [x] #13 Roman to Integer
-[] #237 Delete Node in a Linked List
+[x] #237 Delete Node in a Linked List
 [] #122 Best Time to Buy and Sell Stock II
 [] #242 Valid Anagram
 [] #217 Contains Duplicate
