@@ -9,8 +9,8 @@
 [x] #169 Majority Element
 [x] #13 Roman to Integer
 [x] #237 Delete Node in a Linked List
-[] #122 Best Time to Buy and Sell Stock II
-[] #242 Valid Anagram
+[x] #122 Best Time to Buy and Sell Stock II
+[x] #242 Valid Anagram
 [] #217 Contains Duplicate
 [] #387 First Unique Character in a String
 [] #108 Convert Sorted Array to Binary Search Tree
