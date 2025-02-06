@@ -11,8 +11,8 @@
 [x] #237 Delete Node in a Linked List
 [x] #122 Best Time to Buy and Sell Stock II
 [x] #242 Valid Anagram
-[] #217 Contains Duplicate
-[] #387 First Unique Character in a String
+[x] #217 Contains Duplicate
+[x] #387 First Unique Character in a String
 [] #108 Convert Sorted Array to Binary Search Tree
 [] #268 Missing Number
 [] #350 Intersection of Two Arrays II
