@@ -13,7 +13,7 @@
 [x] #242 Valid Anagram
 [x] #217 Contains Duplicate
 [x] #387 First Unique Character in a String
-[] #108 Convert Sorted Array to Binary Search Tree
+[x] #108 Convert Sorted Array to Binary Search Tree
 [] #268 Missing Number
 [] #350 Intersection of Two Arrays II
 [] #121 Best Time to Buy and Sell Stock
