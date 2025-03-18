@@ -21,6 +21,8 @@ public class IntersectionOfTwoArrays {
     public static void main(String[] args) {
         System.out.println(Arrays.toString(intersect(new int[]{1, 2, 2, 1}, new int[]{2, 2})));
         System.out.println(Arrays.toString(intersect(new int[]{4, 9, 5}, new int[]{9, 4, 9, 8, 4})));
+        System.out.println(Arrays.toString(intersectSortedArrays(new int[]{1, 1, 2, 2}, new int[]{2, 2})));
+        System.out.println(Arrays.toString(intersectSortedArrays(new int[]{4, 5, 9}, new int[]{4, 4, 8, 9, 9})));
     }
 
     //TC: O(n+m)
@@ -41,5 +43,27 @@ public class IntersectionOfTwoArrays {
         }
 
         return resultList.stream().mapToInt(i -> i).toArray();
+    }
+
+    //TC: O(n+m)
+    //SC: O(min(n,m))
+    private static int[] intersectSortedArrays(int[] array1, int[] array2) {
+        List<Integer> resultList = new ArrayList<>();
+
+        int i = 0;
+        int j = 0;
+        while (i < array1.length && j < array2.length) {
+            if (array1[i] < array2[j]) {
+                i++;
+            } else if (array1[i] > array2[j]) {
+                j++;
+            } else {
+                resultList.add(array1[i]);
+                i++;
+                j++;
+            }
+        }
+
+        return resultList.stream().mapToInt(k -> k).toArray();
     }
 }
