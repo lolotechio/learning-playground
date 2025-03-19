@@ -16,7 +16,7 @@
 [x] #108 Convert Sorted Array to Binary Search Tree
 [x] #268 Missing Number
 [x] #350 Intersection of Two Arrays II
-[] #121 Best Time to Buy and Sell Stock
+[x] #121 Best Time to Buy and Sell Stock
 [] #21 Merge Two Sorted Lists
 [] #202 Happy Number
 [] #118 Pascal's Triangle
