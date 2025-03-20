@@ -32,6 +32,10 @@ public class LinkedList {
     }
 
     public static LinkedList fromArray(int[] array) {
+        if (array == null || array.length == 0) {
+            return null;
+        }
+
         var linkedList = new LinkedList(new Node(array[0]));
 
         var currentNode = linkedList.getHead();
